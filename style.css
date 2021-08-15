@@ -1,0 +1,26 @@
+h1 {
+    color: red;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    color: purple;
+}
+
+div h2 {
+    color: green;
+}
+
+.dogma h2 {
+    color: brown;
+}
+
+#dogg h2 {
+    color: pink;
+    text-align: center;
+}
+
+#dogg {
+    text-align: center;
+}
