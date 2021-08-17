@@ -16,3 +16,11 @@ function onbutton(x){
 function offbutton(x){
     x.style.color = "black";
 }
+
+window.onscroll = function() {stickyNav()};
+var navbar = document.getElementById("navbar");
+var navtop = navbar.offsetTop;
+
+function stickyNav(){
+    (window.pageYOffset > navtop) ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+}
