@@ -1,26 +1,115 @@
-h1 {
-    color: red;
+* {
     margin: 0;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    color: purple;
+main {
+    font-family: Asap, sans-serif;
 }
 
-div h2 {
-    color: green;
+.landing {
+    min-height: 100vh; /* 100% of viewport height */
+    background: url("shore.jpg");
+    background-size: cover;
+    padding: 0rem 5rem; /* 0 top/bottom, 5 left/right */
 }
 
-.dogma h2 {
-    color: brown;
+nav {
+    display: flex; /* side by side display */
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
 }
 
-#dogg h2 {
-    color: pink;
-    text-align: center;
+#nav-links {
+    display: flex;
+    list-style: none; /* remove bullet pts */
 }
 
-#dogg {
-    text-align: center;
+#nav-links li {
+    padding-left: 10rem;
+    font-size: 1.2rem;
+}
+
+#logo {
+    font-family: Asap, sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.bigtext {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%); /* center perfectly, since text has actual length */
+    font-family: Asap, sans-serif;
+    font-weight: lighter;
+    font-size: 5rem;
+}
+
+.intro { /* to initially cover up everything */
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* vertical center */ 
+    align-items: center; /* horizontal center */ 
+}
+
+.slider { 
+    background: #A0A0D5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transform: translateY(100%); /* all the way down so it's out of view */
+}
+
+.intro-text { 
+    color: rgb(227, 242, 255);
+    font-family: Asap, sans-serif;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+}
+
+.hide {
+    background: black;
+    padding: 1rem;
+    overflow: hidden; /* clips elements outside of hide box */
+}
+
+.hide span {
+    transform: translateY(100%); /* translates elements outside of hide box */
+    display: inline-block; 
+}
+
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-family: Asap, sans-serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.projects {
+    margin: 0;
+    padding: .7rem;
+    background-color: #DDCDE8;
+    font: Asap, sans-serif;
+}
+
+.project-n {
+    align-self: center;
+    padding: .7rem;
 }

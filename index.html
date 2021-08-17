@@ -7,19 +7,100 @@
     <title>Raleigh Clemens</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!--Asap sans-serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+
+    <!--Ranchers-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Ranchers&display=swap" rel="stylesheet">       
+
 </head>
 <body>
-    <div class="about">
-        <h2>About</h2>
-        <p>this is some information about me</p>
-    </div> 
+    <main>
+        <section class="landing">
+            <nav>
+                <h1 id="logo">
+                    <button onclick="location.href='http://www.github.com/rjclemens'" 
+                    onmouseover="onbutton(this)" onmouseout="offbutton(this)"
+                    type="button">GitHub</button>
+                </h1>
 
-    <div class="projects">
-        <h2>My Projects</h2>
-        <div class="dictocounter">
-            <p>info about proj</p>
-            <img src="dictocounter1.jpg" alt="Dictocounter in Action">
+                <ul id="nav-links">
+                    <li>                    
+                        <button onclick="location.href='http://127.0.0.1:5500/#landing'" 
+                        onmouseover="onbutton(this)" onmouseout="offbutton(this)"
+                        type="button">Home</button>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/#projects"><button
+                        onmouseover="onbutton(this)" onmouseout="offbutton(this)"
+                        type="button">Projects</button></a>
+                    </li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+
+            <h2 class="bigtext">Raleigh Clemens</h2>
+        </section>
+    </main>
+
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">Raleigh Clemens</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">ECE & CS</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">Cornell '24</span>
+            </h1>
         </div>
     </div>
+
+    <div class="slider"></div>
+
+    <article class="projects" id=#projects>
+        <h2>My Projects</h2>
+        <article class="project-n" id="dictocounter">
+            <h3>Dictation Counter</h3>
+            <p>info about proj</p>
+            <img src="dictocounter1.jpg" alt="Dictocounter in Action">
+        </article>
+        <article class="project-n" id="calc">
+            <h3>RPN Calculator</h3>
+            <p>info about proj</p>
+            <img src="calc.jpg" alt="RPN Calculator Decoding Input">
+        </article>
+        <article class="project-n" id="markov">
+            <h3>Markov Chain Text Generation</h3>
+            <p>info about proj</p>
+            <img src="calc.jpg" alt="Markov Chain Text Generation">
+        </article>
+        <article class="project-n" id="audio">
+            <h3>Song Similarities</h3>
+            <p>info about proj</p>
+            <img src="calc.jpg" alt="Audio Spectral Analysis">
+        </article>
+        <article class="project-n" id="tree">
+            <h3>DFS/BFS Search Tree</h3>
+            <p>info about proj</p>
+            <img src="calc.jpg" alt="Simple Trees">
+        </article>
+    </article>
+
+    <!--gsap 3 cdn-->
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" 
+        integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="app.js"></script>
+
 </body>
 </html>
