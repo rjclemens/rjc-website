@@ -40,7 +40,11 @@
                         onmouseover="onbutton(this)" onmouseout="offbutton(this)"
                         type="button">Projects</button></a>
                     </li>
-                    <li>Contact</li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/#contact"><button
+                        onmouseover="onbutton(this)" onmouseout="offbutton(this)"
+                        type="button">Contact</button></a>
+                    </li>
                 </ul>
             </nav>
 
@@ -64,49 +68,64 @@
 
     <div class="slider"></div>
 
-    <article class="projects" id=#projects>
+    <div class="projects" id=#projects>
         <h2>My Projects</h2>
-        <article class="project-n" id="dictocounter">
-            <h3>Dictation Counter</h3>
-            <p>info about proj</p>
-            <img src="dictocounter1.jpg" alt="Dictocounter in Action">
+
+        <article class="project-elem">
+            <div class="project-n js-scroll" id="dictocounter">
+                <h3>Dictation Counter</h3>
+                <p>info about proj</p>
+                <img src="dictocounter1.jpg" alt="Dictocounter in Action">
+            </div>
+            <div class="img js-scroll">
+                <p>heres SOME IMAGE</p>
+            </div>
         </article>
-        <article class="img">
-            <p>heres SOME IMAGE</p>
+
+        <article class="project-elem">
+            <div class="project-n js-scroll" id="calc">
+                <h3>RPN Calculator</h3>
+                <p>info about proj</p>
+                <img src="calc.jpg" alt="RPN Calculator Decoding Input">
+            </div>
+            <div class="img js-scroll">
+                <p>heres SOME IMAGE</p>
+            </div>
         </article>
-        <article class="project-n" id="calc">
-            <h3>RPN Calculator</h3>
-            <p>info about proj</p>
-            <img src="calc.jpg" alt="RPN Calculator Decoding Input">
+        
+        <article class="project-elem">
+            <div class="project-n js-scroll" id="markov">
+                <h3>Markov Chain Text Generation</h3>
+                <p>info about proj</p>
+                <img src="calc.jpg" alt="Markov Chain Text Generation">
+            </div>
+            <div class="img js-scroll">
+                <p>heres SOME IMAGE</p>
+            </div>
         </article>
-        <article class="img">
-            <p>heres SOME IMAGE</p>
+
+        <article class="project-elem">
+            <div class="project-n js-scroll" id="audio">
+                <h3>Song Similarities</h3>
+                <p>info about proj</p>
+                <img src="calc.jpg" alt="Audio Spectral Analysis">
+            </div>
+            <div class="img js-scroll">
+                <p>heres SOME IMAGE</p>
+            </div>
         </article>
-        <article class="project-n" id="markov">
-            <h3>Markov Chain Text Generation</h3>
-            <p>info about proj</p>
-            <img src="calc.jpg" alt="Markov Chain Text Generation">
+
+        <article class="project-elem">
+            <div class="project-n js-scroll" id="tree">
+                <h3>DFS/BFS Search Tree</h3>
+                <p>info about proj</p>
+                <img src="calc.jpg" alt="Simple Trees">
+            </div>
+            <div class="img js-scroll">
+                <p>heres SOME IMAGE</p>
+            </div>
         </article>
-        <article class="img">
-            <p>heres SOME IMAGE</p>
-        </article>
-        <article class="project-n" id="audio">
-            <h3>Song Similarities</h3>
-            <p>info about proj</p>
-            <img src="calc.jpg" alt="Audio Spectral Analysis">
-        </article>
-        <article class="img">
-            <p>heres SOME IMAGE</p>
-        </article>
-        <article class="project-n" id="tree">
-            <h3>DFS/BFS Search Tree</h3>
-            <p>info about proj</p>
-            <img src="calc.jpg" alt="Simple Trees">
-        </article>
-        <article class="img">
-            <p>heres SOME IMAGE</p>
-        </article>
-    </article>
+    </div>
 
     <!--gsap 3 cdn-->
     <script 

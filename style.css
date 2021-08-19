@@ -20,7 +20,7 @@ main {
     align-items: center;
     justify-content: space-between;
     min-height: 6.5vh;
-    z-index: 2; /* on top of bigtext */
+    z-index: 3; /* on top of bigtext */
 }
 
 .sticky {
@@ -69,6 +69,7 @@ main {
     display: flex;
     justify-content: center; /* vertical center */ 
     align-items: center; /* horizontal center */ 
+    z-index: 2;
 }
 
 .slider { 
@@ -113,22 +114,54 @@ button {
     font-size: 1.2rem;
 }
 
+.project-elem {
+    background-color: greenyellow;
+    margin: 3rem 5rem;
+    --height: 400px;
+    overflow: hidden;
+}
+
 .projects {
     margin: 0;
-    padding: .7rem;
+    padding: 3rem;
     background-color: #DDCDE8;
     font: Asap, sans-serif;
+    height: 5*var(--height);
+    text-align: center;
 }
 
 .project-n {
+    background-color: green;
     text-align: center;
-    padding: 5rem;
-    width: 70%;
+    width: 60%;
+    height: var(--height);
     float: left;
+    padding: 3rem;
 }
 
 .img {
+    background-color: blue;
     text-align: center;
-    padding: 5rem;
-    margin-left: 50%;
+    margin-left: 60%;
+    height: var(--height);
+}
+
+.scrolled-proj-nm{
+    opacity: 1;
+    transition: opacity 500ms linear, transform 500ms linear;
+}
+
+.scrolled-proj-hidden-nm{
+    opacity: 0;
+    transform: translateX(-500px);
+}
+
+.scrolled-proj-img{
+    opacity: 1;
+    transition: opacity 500ms linear, transform 500ms linear;
+}
+
+.scrolled-proj-hidden-img{
+    opacity: 0;
+    transform: translateX(500px);
 }
