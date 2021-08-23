@@ -114,13 +114,6 @@ button {
     font-size: 1.2rem;
 }
 
-.project-elem {
-    background-color: greenyellow;
-    margin: 3rem 5rem;
-    --height: 400px;
-    overflow: hidden;
-}
-
 .projects {
     margin: 0;
     padding: 3rem;
@@ -130,13 +123,47 @@ button {
     text-align: center;
 }
 
+.project-elem {
+    background-color: #FAECFF;
+    margin: 3rem 5rem;
+    --height: 400px;
+    overflow: hidden;
+}
+
 .project-n {
-    background-color: green;
+    background-color: #FEFAFF;
     text-align: center;
-    width: 60%;
+    width: 58.9%;
     height: var(--height);
     float: left;
-    padding: 3rem;
+    padding: 2rem 4rem;
+    border-radius: 45px;
+    margin: .5rem;
+    max-height: var(--height) - .5rem;
+    font-size: large;
+}
+
+.project-n > h3 {
+    font-size: x-large;
+    margin-top: 1rem;
+}
+
+.project-n > h4 {
+    font-family: Asap, consolas;
+    margin-bottom: 1rem;
+    color: grey;
+    font-weight: lighter;
+    
+}
+
+.project-n > p {
+    margin-bottom: 1rem;
+}
+
+.project-n > a > button {
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Asap, architectural;
 }
 
 .img {
@@ -146,22 +173,48 @@ button {
     height: var(--height);
 }
 
-.scrolled-proj-nm{
+.scrolled-proj-nm {
     opacity: 1;
     transition: opacity 500ms linear, transform 500ms linear;
 }
 
-.scrolled-proj-hidden-nm{
+.scrolled-proj-hidden-nm {
     opacity: 0;
     transform: translateX(-500px);
 }
 
-.scrolled-proj-img{
+.scrolled-proj-img {
     opacity: 1;
     transition: opacity 500ms linear, transform 500ms linear;
 }
 
-.scrolled-proj-hidden-img{
+.scrolled-proj-hidden-img {
     opacity: 0;
     transform: translateX(500px);
+}
+
+.contact {
+    height: 500px;
+    background-color: #DDCDE8;
+}
+
+.contact > h2 {
+    text-align: center;
+    padding: 2rem;
+}
+
+#contact-links {
+    display: flex;
+    list-style: none; /* remove bullet pts */
+    padding: 0rem 5rem;
+}
+
+#contact-links li { 
+    padding: 1rem;
+    margin: 3rem;
+    max-height: 1rem;
+}
+
+#linked-in {
+    background: url(./images/linkedin.png);
 }

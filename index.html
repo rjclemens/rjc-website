@@ -23,27 +23,27 @@
     <main>
         <section class="landing">
             <nav id="navbar">
-                <h1 id="logo">
+                <h2 id="logo">
                     <button onclick="location.href='http://www.github.com/rjclemens'" 
-                    onmouseover="onbutton(this)" onmouseout="offbutton(this)"
-                    type="button">GitHub</button>
-                </h1>
+                    class="bpurple" onmouseover="onbutton(this)" 
+                    onmouseout="offbutton(this)" type="button">GitHub</button>
+                </h2>
 
                 <ul id="nav-links">
                     <li>                    
-                        <button onclick="location.href='http://127.0.0.1:5500/#landing'" 
-                        onmouseover="onbutton(this)" onmouseout="offbutton(this)"
-                        type="button">Home</button>
+                        <a href="#landing"><button
+                        onmouseover="onbutton(this)" class="bpurple"
+                        onmouseout="offbutton(this)" type="button">Home</button></a>
                     </li>
                     <li>
-                        <a href="http://127.0.0.1:5500/#projects"><button
-                        onmouseover="onbutton(this)" onmouseout="offbutton(this)"
-                        type="button">Projects</button></a>
+                        <a href="#projects"><button
+                        onmouseover="onbutton(this)" class="bpurple"
+                        onmouseout="offbutton(this)" type="button">Projects</button></a>
                     </li>
                     <li>
-                        <a href="http://127.0.0.1:5500/#contact"><button
-                        onmouseover="onbutton(this)" onmouseout="offbutton(this)"
-                        type="button">Contact</button></a>
+                        <a href="#contact"><button
+                        onmouseover="onbutton(this)" class="bpurple"
+                        onmouseout="offbutton(this)" type="button">Contact</button></a>
                     </li>
                 </ul>
             </nav>
@@ -73,58 +73,117 @@
 
         <article class="project-elem">
             <div class="project-n js-scroll" id="dictocounter">
-                <h3>Dictation Counter</h3>
-                <p>info about proj</p>
-                <img src="dictocounter1.jpg" alt="Dictocounter in Action">
+
+                <a href="https://www.github.com/rjclemens/dictocounter"><button
+                onmouseover="onbutton(this)" onmouseout="offbutton(this)"
+                type="button">Dictation Counter</button></a>
+
+                <h4>Swift</h4>
+                <p>
+                    Dictocounter is an iPhone app that counts which words you say. 
+                    To accomplish this, the app records your audio and parses it using iPhone's built-in dictation.
+                    This data is then displayed on the homepage of the app, where a user can see how many times they've said any word since downloading the app.
+                    The data are also represented visually under the graphs tab. 
+                    These visaul tools can help users discover if their speech patterns follow the natural tendicies of literature (i.e. Zipf's language law). 
+                </p>
+
+                <p>
+                    (WIP): A third tab (profile) will showcase the most common words a user has said, as well as any temporal abnormalities in a user's speech.
+                    The latter may include words that a user has used frequently in a previous time period, but less recently, and vice versa.
+                </p>
             </div>
-            <div class="img js-scroll">
-                <p>heres SOME IMAGE</p>
+            <div class= "img js-scroll">
+                <img src="dictocounter1.jpg" alt="Dictocounter in Action">
             </div>
         </article>
 
         <article class="project-elem">
             <div class="project-n js-scroll" id="calc">
-                <h3>RPN Calculator</h3>
-                <p>info about proj</p>
-                <img src="calc.jpg" alt="RPN Calculator Decoding Input">
+                <a href="https://github.com/rjclemens/calc-cpp"><button
+                onmouseover="onbutton(this)" onmouseout="offbutton(this)"
+                type="button">RPN Calculator</button></a>
+                <h4>C++</h4>
+                <p>
+                    The Reverse Polish Notation (RPN) Calculator is a C++ script that efficiently parses and computes an expression inputted by the user.
+                    The calculator can parse and evaluate expressions containing mathematical constants and multi-input functions.
+                    I've extended the calculator to work in the complex plane and recognize A*exp(j&Phi;) as a magnitude and phase.
+                    Additionally, the user can store numbers or past answers as variables, which can then be referenced in future expressions.
+                </p>
             </div>
             <div class="img js-scroll">
-                <p>heres SOME IMAGE</p>
+                <img src="calc.jpg" alt="RPN Calculator Decoding Input">
             </div>
         </article>
         
         <article class="project-elem">
             <div class="project-n js-scroll" id="markov">
-                <h3>Markov Chain Text Generation</h3>
-                <p>info about proj</p>
-                <img src="calc.jpg" alt="Markov Chain Text Generation">
+                <a href="https://github.com/rjclemens/markov_chain_NLP"><button
+                onmouseover="onbutton(this)" onmouseout="offbutton(this)"
+                type="button">Markov Chain Text Generation</button></a>
+                <h4>C++</h4>
+                <p>
+                    The Markov Chain Text Generator is a text generator that parses a user-provided dataset to complete inputted sentences or paragraphs.
+                    Words are filled in character-by-character based on k (the length of the evaluating string) and each evaluating string's probability distribution, which is derived from the dataset.
+                    For example, if k = 5 and the inputted fragment is "Hello wor" then the next character will be chosen based on the learned probability distribution for the length 5 string "o wor".
+                    Most likely, the next character will be 'l' as in "Hell<u>o wor</u>ld", but it may also be 'k' as in "Go t<u>o wor</u>k", and many other characters based on the sentences given in the dataset.
+                </p>
+
+                <p>
+
+                </p>
             </div>
             <div class="img js-scroll">
-                <p>heres SOME IMAGE</p>
+                <img src="calc.jpg" alt="Markov Chain Text Generation">
             </div>
         </article>
 
         <article class="project-elem">
             <div class="project-n js-scroll" id="audio">
-                <h3>Song Similarities</h3>
+                <a href="https://github.com/rjclemens/audio_spec_analysis"><button
+                onmouseover="onbutton(this)" onmouseout="offbutton(this)"
+                type="button">Song Similarities</button></a>
+                <h4>Python</h4>
                 <p>info about proj</p>
-                <img src="calc.jpg" alt="Audio Spectral Analysis">
             </div>
             <div class="img js-scroll">
-                <p>heres SOME IMAGE</p>
+                <img src="calc.jpg" alt="Audio Spectral Analysis">
             </div>
         </article>
 
         <article class="project-elem">
             <div class="project-n js-scroll" id="tree">
-                <h3>DFS/BFS Search Tree</h3>
+                <a href="https://github.com/rjclemens/simple_tree_methods"><button
+                onmouseover="onbutton(this)" onmouseout="offbutton(this)"
+                type="button">DFS/BFS Search Tree</button></a>
+                <h4>C</h4>
                 <p>info about proj</p>
-                <img src="calc.jpg" alt="Simple Trees">
             </div>
             <div class="img js-scroll">
-                <p>heres SOME IMAGE</p>
+                <img src="calc.jpg" alt="Simple Trees">
             </div>
         </article>
+    </div>
+
+    <div class="contact">
+        <h2>Contact</h2>
+        <ul id="contact-links">
+            <li>                    
+                <a href="#landing"><button
+                onmouseover="onbutton(this)" class="bpurple"
+                onmouseout="offbutton(this)" type="button" id="linked-in">Home</button></a>
+            </li>
+            <li>
+                <a href="#projects"><button
+                onmouseover="onbutton(this)" class="bpurple"
+                onmouseout="offbutton(this)" type="button">Projects</button></a>
+            </li>
+            <li>
+                <a href="#contact"><button
+                onmouseover="onbutton(this)" class="bpurple"
+                onmouseout="offbutton(this)" type="button">Contact</button></a>
+            </li>
+        </ul>
+
     </div>
 
     <!--gsap 3 cdn-->

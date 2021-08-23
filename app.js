@@ -12,7 +12,7 @@ tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 
 // button hover animation
 function onbutton(x){
-    x.style.color = "#DDCDE8";
+    (x.classList.contains("bpurple")) ? x.style.color = "#DDCDE8" : x.style.color = "red";
 }
 
 function offbutton(x){
